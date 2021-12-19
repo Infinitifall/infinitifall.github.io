@@ -1,0 +1,133 @@
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: $base-font-weight;
+  letter-spacing: $base-letter-spacing;
+
+  color: $text-1;
+  background-color: $bg-1;
+}
+
+
+/*
+Links
+*/
+a { color: $link-1; text-decoration: none; }
+a:visited { color: $link-1; }
+a:hover { color: darken($link-1, 15%); text-decoration: underline; }
+
+
+/*
+Images
+*/
+img {
+  margin-top: 1em + 2em;
+  margin-bottom: 2em;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: $content-max-width;
+}
+
+
+/*
+Image captions
+*/
+img + em {
+  margin-top: -1em;
+  margin-bottom: 2em;
+
+  display: block;
+  text-align: center;
+
+  color: $text-2;
+}
+
+
+/*
+Tables
+*/
+table, th, td {
+  margin: 2em 1em;
+  padding: 0.3em 0.5em;
+  
+  border: 1px solid $text-2;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: $bg-2;
+}
+
+
+/*
+Code and preformatted text
+*/
+code {
+  color: $text-1;
+  font-size: $code-font-size;
+  background-color: $bg-2;
+  padding: 0.1em 0.3em;
+  border-radius: 0.4em;
+}
+
+figure {
+  margin: 0 0;
+}
+
+pre {
+  margin: 2em 1em;
+  overflow-x: auto;
+
+  > code {
+    display: block;
+    padding: 2em 2em;
+  }
+}
+
+
+/*
+Quote
+*/
+blockquote {
+  margin: 2em 1em;
+  padding: 0 2em;
+  border-left: 4px solid $text-2;
+  color: $text-2;
+}
+
+
+/*
+Headings
+*/
+h1, h2, h3, 
+h4, h5, h6 {
+  margin-top: 2em;
+  color: $text-0;
+}
+
+h1, h2 { border-bottom: 1px solid $bg-2;}
+
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1em; }
+h5 { font-size: 0.8em; }
+h6 { font-size: 0.6em; }
+
+
+/*
+Breaks
+*/
+hr {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  height: 1px;
+  color: $bg-2;
+  background-color: $bg-2;
+  border-style: solid;
+}

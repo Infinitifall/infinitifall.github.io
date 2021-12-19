@@ -1,0 +1,27 @@
+
+title: "Infinitifall.github.io"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
+
+sass:
+  sass_dir: _sass
+
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

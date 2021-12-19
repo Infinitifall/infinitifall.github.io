@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+  {% if page.title %}
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% endif %}
+
+  <nav style="margin-bottom: 2em;">
+    <span>
+      {% for category in site.categories %}  
+        <a href="{{ category[0] | relative_url }}" style="margin-right: 1em;">{{ category[0] | escape }}</a>
+      {% endfor %}
+    </span>
+    <span style="float: right;">
+      <a href="{{ '/feed.xml' | relative_url }}" style="margin-right: 1em;">RSS</a>
+      <a href="{{ '/tags' | relative_url }}">Tags</a>
+    </span>
+  </nav>
+
+  <main>
+
+    {{ content }}
+
+    <div>
+      <ul class="post-list">
+        {% for post in site.posts %}
+          {% include post-list.html %}
+        {% endfor %}
+      </ul>
+    </div>
+  </main>
+</div>

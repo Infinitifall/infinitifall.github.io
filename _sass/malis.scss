@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$base-font-weight: 400;
+$base-letter-spacing: 0;
+$small-font-size: $base-font-size * 0.9;
+$code-font-size: $base-font-size * 0.9;
+$tag-font-size: $base-font-size * 0.8;
+
+$text-0: #333;
+$text-1: #333;
+$text-2: #666;
+$bg-1:   #fff;
+$bg-2:   #eee;
+$link-1: #3c86c2;
+
+$content-width: 750px;
+$content-max-width: 80%;
+
+
+@import
+  "malis/base",
+  "malis/layout",
+  "malis/syntax-highlighting"
+;

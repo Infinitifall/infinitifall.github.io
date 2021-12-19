@@ -1,0 +1,13 @@
+<head>
+  <meta charset="utf-8">
+  {% if page.title %}
+  <title>{{ page.title }}</title>
+  {% endif %}
+  
+  {% if page.title && page.excerpt %}
+  <meta name="{{ page.title }}" content="{{ page.excerpt }}">
+  {% endif %}
+
+  <link rel="stylesheet" href='{{ "/assets/main.css" | relative_url }}'>
+  <link rel="icon" type="image/x-icon" href='{{ "/assets/images/favicon.png" | relative_url }}'>
+</head>

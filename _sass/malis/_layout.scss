@@ -1,0 +1,64 @@
+
+/*
+Wrapper around body
+*/
+.wrapper {
+  max-width: MIN($content-width, $content-max-width);
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-bottom: 8em;
+}
+
+
+/*
+Styling for the page
+*/
+.page-date {
+  color: $text-2;
+  font-size: $small-font-size;
+}
+
+.page-title {
+  margin-top: 3em;
+  margin-bottom: 0.25em;
+  font-size: 2em;
+}
+
+
+/*
+Styling for post list
+*/
+.post-list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 3em;
+}
+
+.post-element {
+  margin-bottom: 1em;
+}
+
+.post-date {
+  color: $text-2;
+  font-size: $small-font-size;
+}
+
+.post-title {
+  margin-bottom: 0;
+  margin-top: 0;
+  letter-spacing: -0.5px;
+  border-bottom: none;
+}
+
+
+/*
+Styling for tags
+*/
+.post-tag {
+  font-size: $tag-font-size;
+  color: $text-2;
+  font-style: oblique;
+}
+
